@@ -49,17 +49,18 @@ Make sure your code supports any number of features and is well-vectorized.
 
 ![image](https://user-images.githubusercontent.com/85407775/121798779-afd75f00-cc41-11eb-98dc-baa93e8632a7.png)
 
-- ### Selecting learning rates
+- ## Selecting learning rates
 In this part of the exercise, you will get to try out diﬀerent learning rates for the dataset and ﬁnd a learning rate that converges quickly. 
 Run gradient descent for about 50 iterations at the chosen learning rate. After the last iteration, implement the script that plots the J values against the number of the iterations.
 If you picked a learning rate within a good range, your plot look similar Figure 4. If your graph looks very diﬀerent, especially if your value of J(θ) increases or even blows up, adjust your learning rate and try again. We recommend trying values of the learning rate a on a log-scale, at multiplicative steps of about 3 times the previous value (i.e., 0.3, 0.1, 0.03, 0.01 and so on). You may also want to adjust the number of iterations you are running if that will help you see the overall trend in the curve.
 
 ![image](https://user-images.githubusercontent.com/85407775/121798846-19576d80-cc42-11eb-82f1-ad7cdda1d6ec.png)
+
 Notice the changes in the convergence curves as the learning rate changes. With a small learning rate, you should ﬁnd that gradient descent takes a very long time to converge to the optimal value. Conversely, with a large learning rate, gradient descent might not converge or might even diverge!
 
 Using the best learning rate that you found, run gradient descent until convergence to ﬁnd the ﬁnal values of θ. Next, use this value of θ to predict the price of a house with 1650 square feet and 3 bedrooms. You will use value later to check your implementation of the normal equations. Don’t forget to normalize your features when you make this prediction!
 
-- ### Normal Equations
+- ## Normal Equations
 We know that the closed-form solution to linear regression is
 Using this formula does not require any feature scaling, and you will get an exact solution in one calculation: there is no “loop until convergence” like in gradient descent.
 Implement the code to use the formula above to calculate θ. Remember that while you don’t need to scale your features, we still need to add a columns of 1’s to the X matrix to have an intercept term (θ).
