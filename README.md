@@ -23,6 +23,7 @@ In this part, you will ﬁt the linear regression parameters θ to our dataset u
 
 - ## Update Equations
 The objective of linear regression is to minimize the cost function
+
 ![image](https://user-images.githubusercontent.com/85407775/121798330-1ad36680-cc3f-11eb-9af7-a2356c2f5cc1.png)
 ![image](https://user-images.githubusercontent.com/85407775/121798338-23c43800-cc3f-11eb-9a9e-684f97415a37.png)
 ![image](https://user-images.githubusercontent.com/85407775/121798345-29ba1900-cc3f-11eb-8584-5737b5fc3541.png)
